@@ -12,9 +12,59 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    text-align: center;
+    align-items: flex-start; /* Align to left */
+    text-align: left;
+    position: relative;
+    padding-left: 210px; /* Keep left alignment */
   }
+  
+  /* Typography Text 1 */
+  .typography-text {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 76px;
+    letter-spacing: 0.02em;
+    width: 606px;
+    height: 228px;
+    position: absolute;
+    top: 150px; 
+    left: 400px; 
+    opacity: 1; /* Make text visible */
+    color: #201d1d; /* Black color */
+  }
+  
+  /* Typography Text 2 */
+  .sub-text {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 28px;
+    width: 458px;
+    height: 28px;
+    position: absolute;
+    top: 400px; /* Moved more up */
+    left: 400px; /* Moved more right */
+    opacity: 1; /* Make text visible */
+    color: #201d1d; /* Black color */
+  }
+  
+  /* Typography Text 3 */
+  .description-text {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    width: 510px;
+    height: 308px;
+    position: absolute;
+    top: 480px; /* Moved more up */
+    left: 400px; /* Moved more right */
+    opacity: 1; /* Make text visible */
+    color: #201d1d; /* Black color */
+  }
+  
+  /* Middle Portion */
   .middle-portion {
     width: 100vw; /* Full viewport width */
     height: 903px;
