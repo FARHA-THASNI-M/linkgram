@@ -5,10 +5,16 @@ export const Homepage = () => {
   return (
     <div className="homepage">
       {/* Upper Portion */}
+      <div className="homepage">
+      {/* Upper Portion */}
       <div className="upper-portion">
         <h1>Welcome to LinkGram!</h1>
         <p>Explore the best features for your needs!</p>
+        <div className="typography-text">
+          Discover the World through <br /> LinkGram
+        </div>
       </div>
+    </div>
 
       {/* Middle Portion */}
       <div className="middle-portion">
