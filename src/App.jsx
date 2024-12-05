@@ -1,19 +1,17 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Navbar from './Navbar'; // Your navbar component
-import Footer from './Footer'; // Your footer component
-import { Homepage } from './Homepage'; // Homepage component
-import Privacy from './Privacy'; // Privacy page component
-import Terms from './Terms'; // Terms page component
+import Navbar from './Navbar'; 
+import Footer from './Footer';
+import { Homepage } from './Homepage'; 
+import Privacy from './Privacy'; 
+import Terms from './Terms'; 
 
 function App() {
   return (
     <Router>
       <div className="App">
-        {/* Navbar Component */}
         <Navbar />
         
-        {/* Main Content with spacing from the navbar */}
         <div className="main-content mt-16">
           <Routes>
             <Route path="/" element={<Homepage />} />
@@ -22,7 +20,6 @@ function App() {
           </Routes>
         </div>
 
-        {/* Footer Component */}
         <Footer />
       </div>
     </Router>
