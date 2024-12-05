@@ -11,75 +11,98 @@ export const Homepage = () => {
   return (
     <div className="overflow-x-hidden">
       {/* Upper Portion */}
-      <div className="w-full h-[838px] bg-gradient-to-b from-[#f6f6f6] to-white flex flex-col justify-start items-start text-left relative px-4 sm:px-8 md:px-20">
-        <div className="font-poppins font-bold text-[32px] sm:text-[48px] md:text-[64px] leading-[60px] tracking-[0.02em] text-[#201d1d] absolute top-[150px] left-[10%] sm:left-[20%] md:left-[30%] w-[80%] sm:w-[50%]">
-          Discover the World through <br /> LinkGram
+      <div className="w-full min-h-[838px] bg-white flex flex-col justify-center items-start pl-[170px] pt-[80px] relative">
+        {/* Text Section */}
+        <div className="text-section">
+          <h1 className="font-poppins font-bold text-[64px] leading-[72px] text-[#201d1d] mb-[20px]">
+            Discover the <br /> World through <br /> YangoSocial
+          </h1>
+          <h2 className="font-poppins font-semibold text-[30px] leading-[36px] text-[#201d1d] mb-[30px]">
+            Connect, Capture, and Share!
+          </h2>
+          <p className="font-poppins font-normal text-[18px] leading-[28px] text-[#201d1d] mb-[10px] max-w-[600px]">
+            YangoSocial is a dynamic social media platform that allows users to connect, express, and share their lives with others. It provides a vibrant space for people to discover and engage with captivating visual content, from stunning photographs to creative videos.
+          </p>
+          <p className="font-poppins font-normal text-[18px] leading-[28px] text-[#201d1d] max-w-[600px]">
+            With YangoSocial, users can explore captivating stories, connect with like-minded individuals, and showcase their unique perspectives through engaging posts.
+          </p>
         </div>
-        <div className="font-poppins font-bold text-[20px] sm:text-[24px] md:text-[30px] leading-[28px] text-[#201d1d] absolute top-[400px] left-[10%] sm:left-[20%] md:left-[30%] w-[80%] sm:w-[50%]">
-          Connect, Capture, and Share!
-        </div>
-        <div className="font-poppins font-normal text-[14px] sm:text-[16px] md:text-[18px] leading-[22px] text-[#201d1d] absolute top-[480px] left-[10%] sm:left-[20%] md:left-[30%] w-[80%] sm:w-[50%]">
-          LinkGram is a dynamic social media platform that allows users to connect, express, and share their lives with others. It provides a vibrant space for people to discover and engage with captivating visual content, from stunning photographs to creative videos. With LinkGram, users can explore an array of captivating stories, connect with friends and like-minded individuals, and showcase their own unique perspective through engaging posts. It's a place where creativity thrives, connections are made, and memorable moments are shared, all within a vibrant and supportive community.
-        </div>
-        <div className="w-full sm:w-[800px] h-[auto] absolute top-[120px] left-[50%] transform -translate-x-1/2 z-0">
-          <img src={image1} alt="LinkGram" className="w-full h-full object-cover" />
+
+        {/* Image Section */}
+        <div className="absolute top-[100px] left-[800px] w-[545px] h-[847px]"> {/* Increased size by 10% */}
+          <img
+            src={image1}
+            alt="YangoSocial App"
+            className="w-full h-full object-cover rounded-lg"
+          />
         </div>
       </div>
 
       {/* Middle Portion */}
-      <div className="w-full bg-gradient-to-br from-[#FDC71A] to-[#EC7B09] flex flex-col justify-center items-center text-center py-[50px] px-[20px] text-black">
-        <h1 className="font-poppins font-bold text-[32px] sm:text-[42px] md:text-[54px] mb-[10px]">LinkGram</h1>
-        <p className="font-poppins font-normal text-[14px] sm:text-[16px] md:text-[18px] mb-[30px] max-w-[900px]">
+      <div className="w-full bg-gradient-to-r from-[#FDC71A] to-[#EC7B09] flex flex-col justify-center items-center py-[50px] px-[20px] text-black">
+        <h1 className="font-poppins font-bold text-[54px] text-center mb-[10px]">
+          LinkGram
+        </h1>
+        <p className="font-poppins font-normal text-[18px] text-center mb-[30px] max-w-[900px]">
           Connect. Create. Explore. LinkGram redefines social interaction with seamless sharing, engaging reels, and endless inspiration.
         </p>
-        <div className="flex flex-wrap justify-center items-center gap-[20px] w-full">
-          {/* Left Section (Home and Explore Icons) */}
-          <div className="flex flex-col items-center text-center max-w-[200px] sm:max-w-[220px]">
-            <img src={homeIcon} alt="Home Icon" className="w-[50px] h-[50px] mb-[10px]" />
-            <p className="font-poppins font-bold text-[16px] sm:text-[18px] mb-[5px]">Home</p>
-            <p className="font-poppins font-normal text-[12px] sm:text-[14px]">
-              Stay updated with your friends and the latest trends!
-            </p>
-          </div>
-          <div className="flex flex-col items-center text-center max-w-[200px] sm:max-w-[220px]">
-            <img src={exploreIcon} alt="Explore Icon" className="w-[50px] h-[50px] mb-[10px]" />
-            <p className="font-poppins font-bold text-[16px] sm:text-[18px] mb-[5px]">Explore</p>
-            <p className="font-poppins font-normal text-[12px] sm:text-[14px]">
-              Discover new creators, trending topics, and exciting content from around the world.
-            </p>
+
+        <div className="flex flex-row justify-center items-center gap-[30px] w-full max-w-[1200px]"> {/* Reduced gap by 20px */}
+          {/* Left Column */}
+          <div className="flex flex-col gap-[40px] items-end text-right">
+            {/* Home Icon */}
+            <div className="flex flex-col items-center">
+              <img src={homeIcon} alt="Home Icon" className="w-[60px] h-[60px] mb-[10px]" />
+              <p className="font-poppins font-bold text-[20px] mb-[5px]">Home</p>
+              <p className="font-poppins font-normal text-[14px] max-w-[180px]">
+                Stay updated with your friends and the latest trends!
+              </p>
+            </div>
+
+            {/* Explore Icon */}
+            <div className="flex flex-col items-center">
+              <img src={exploreIcon} alt="Explore Icon" className="w-[60px] h-[60px] mb-[10px]" />
+              <p className="font-poppins font-bold text-[20px] mb-[5px]">Explore</p>
+              <p className="font-poppins font-normal text-[14px] max-w-[180px]">
+                Discover new creators, trending topics, and exciting content from around the world.
+              </p>
+            </div>
           </div>
 
-          {/* Center Image (Image2) */}
-          <div className="w-[300px] sm:w-[500px] md:w-[700px] h-auto mb-8 mt-[20px]">
-            <img src={image2} alt="LinkGram Feature" className="w-full h-auto object-cover" />
+          {/* Center Image */}
+          <div className="w-[900px] h-auto"> 
+            <img src={image2} alt="LinkGram Feature" className="w-full h-auto object-cover rounded-sm" />
           </div>
 
-          {/* Right Section (Reels and Profile Icons) */}
-          <div className="flex flex-col items-center text-center max-w-[200px] sm:max-w-[220px]">
-            <img src={reelsIcon} alt="Reels Icon" className="w-[50px] h-[50px] mb-[10px]" />
-            <p className="font-poppins font-bold text-[16px] sm:text-[18px] mb-[5px]">Reels</p>
-            <p className="font-poppins font-normal text-[12px] sm:text-[14px]">
-              Express yourself through short, engaging videos.
-            </p>
-          </div>
-          <div className="flex flex-col items-center text-center max-w-[200px] sm:max-w-[220px]">
-            <img src={profileIcon} alt="Profile Icon" className="w-[50px] h-[50px] mb-[10px]" />
-            <p className="font-poppins font-bold text-[16px] sm:text-[18px] mb-[5px]">Profile</p>
-            <p className="font-poppins font-normal text-[12px] sm:text-[14px]">
-              Showcase your favorite moments, track your posts, and customize your profile to reflect your unique style.
-            </p>
+          {/* Right Column */}
+          <div className="flex flex-col gap-[40px] items-start text-left">
+            {/* Reels Icon */}
+            <div className="flex flex-col items-center">
+              <img src={reelsIcon} alt="Reels Icon" className="w-[60px] h-[60px] mb-[10px]" />
+              <p className="font-poppins font-bold text-[20px] mb-[5px]">Reels</p>
+              <p className="font-poppins font-normal text-[14px] max-w-[180px]">
+                Express yourself through short, engaging videos.
+              </p>
+            </div>
+
+            {/* Profile Icon */}
+            <div className="flex flex-col items-center">
+              <img src={profileIcon} alt="Profile Icon" className="w-[60px] h-[60px] mb-[10px]" />
+              <p className="font-poppins font-bold text-[20px] mb-[5px]">Profile</p>
+              <p className="font-poppins font-normal text-[14px] max-w-[180px]">
+                Showcase your favorite moments, track your posts, and customize your profile to reflect your unique style.
+              </p>
+            </div>
           </div>
         </div>
       </div>
 
       {/* Bottom Portion */}
-      <div className="w-full h-[251px] bg-white border-t border-[#dcdcdc] flex flex-col justify-center items-start text-left text-[#333] px-[20px] sm:px-[40px]">
+      <div className="w-full h-[251px] bg-white border-t border-[#dcdcdc] flex flex-col justify-center items-start text-left text-[#333] pl-[100px]">
         <div className="w-[150px] ml-[10px]">
           <img src={logo} alt="Logo" className="w-full" />
         </div>
-        <p className="font-poppins font-normal text-[14px] sm:text-[16px]">
-          Connect, Capture and Share!
-        </p>
+        <p className="font-poppins font-normal text-[16px] mt-[10px]">Connect, Capture and Share!</p>
       </div>
     </div>
   );
