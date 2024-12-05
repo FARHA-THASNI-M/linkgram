@@ -31,7 +31,6 @@
     color: #f4c542;
 }
 
-/* Responsive Styles */
 @media (max-width: 768px) {
     .navbar {
         padding: 15px 10px;
