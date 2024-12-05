@@ -31,6 +31,19 @@
     color: #f4c542;
 }
 
-main {
-    margin-top: 60px; 
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 15px 10px;
+    }
+
+    .navbar-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .navbar-link {
+        font-size: 14px;
+    }
 }
