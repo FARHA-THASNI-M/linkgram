@@ -10,7 +10,6 @@ import profileIcon from './Profile.png';
 export const Homepage = () => {
   return (
     <div className="overflow-x-hidden">
-      {/* Upper Portion */}
       <div className="w-full min-h-[838px] bg-white flex flex-col lg:flex-row justify-center items-center pt-[80px] relative px-6 lg:px-[170px]">
         {/* Text Section */}
         <div className="text-section max-w-[600px] text-center lg:text-left mb-10 lg:mb-0 relative z-10 px-6">
